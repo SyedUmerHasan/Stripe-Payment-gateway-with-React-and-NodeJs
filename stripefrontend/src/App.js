@@ -18,7 +18,7 @@ function App() {
       "Content-Type" : "application/json"
     }
 
-    return fetch('http://localhost:8080/payment', {
+    return fetch('https://us-central1-practice-project-269707.cloudfunctions.net/getpayments', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -73,7 +73,7 @@ function App() {
               >
               <button className="btn waves-effect btn-large waves-light pink">
                 <b>Pay 39$ for Subscription</b>
-                  <i class="material-icons right">send</i>
+                  <i className="material-icons right">send</i>
               </button>
               </StripeCheckout>
             </div>
